@@ -1,0 +1,46 @@
+# Project Configuration
+project:
+  name: "Construction Worker Safety Assessment"
+  version: "1.0.0"
+  
+# Paths
+paths:
+  data_root: "/content/drive/MyDrive/BTP_Data"
+  model_root: "data/models"
+  output_root: "outputs"
+  
+# Model configurations
+models:
+  yolo:
+    version: "yolov8n"
+    confidence_threshold: 0.5
+    iou_threshold: 0.4
+    
+  pose:
+    model_type: "mediapipe"
+    min_detection_confidence: 0.5
+    min_tracking_confidence: 0.5
+    
+  lstm:
+    sequence_length: 30
+    hidden_size: 128
+    num_layers: 2
+    
+# Training parameters
+training:
+  batch_size: 16
+  learning_rate: 0.001
+  epochs: 100
+  early_stopping_patience: 10
+  
+# Data augmentation
+augmentation:
+  rotation_range: 10
+  width_shift_range: 0.1
+  height_shift_range: 0.1
+  horizontal_flip: true
+  
+# Ergonomic assessment
+ergonomics:
+  rula_weights: [1.0, 1.5, 2.0, 3.0]  # Low, Medium, High, Very High
+  reba_weights: [1.0, 1.5, 2.0, 3.0]

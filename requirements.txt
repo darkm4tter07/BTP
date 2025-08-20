@@ -1,28 +1,20 @@
-# Core ML and Computer Vision
-opencv-python==4.8.1.78
-mediapipe==0.10.7
-ultralytics==8.0.20
-
-# Deep Learning Frameworks
-torch>=1.13.0
-torchvision>=0.14.0
-tensorflow>=2.13.0
-
-# Data Science
+torch>=1.9.0
+torchvision>=0.10.0
+opencv-python>=4.5.0
+mediapipe>=0.8.0
+ultralytics>=8.0.0
 numpy>=1.21.0
 pandas>=1.3.0
-matplotlib>=3.5.0
-scikit-learn>=1.0.0
+matplotlib>=3.4.0
 seaborn>=0.11.0
-
-# Utilities
-pillow>=9.0.0
-pyyaml>=6.0
-tqdm>=4.64.0
-jupyter>=1.0.0
-ipykernel>=6.0.0
-
-# Specialized Libraries
-roboflow>=1.0.0
-supervision>=0.16.0
-streamlit>=1.28.0
+scikit-learn>=1.0.0
+pillow>=8.3.0
+tqdm>=4.62.0
+pyyaml>=5.4.0
+flask>=2.0.0
+streamlit>=1.0.0
+google-colab
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
